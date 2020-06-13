@@ -24,16 +24,4 @@ class DateCustomFieldValueModel extends BaseCustomFieldValueModel
 
         return $this;
     }
-
-    /**
-     * @param string|null $requestId
-     *
-     * @return array
-     */
-    public function toApi(string $requestId = null): array
-    {
-        return [
-            'value' => date('Y-m-d', $this->value),
-        ];
-    }
 }
